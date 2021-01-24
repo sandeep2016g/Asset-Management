@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Secondary Reminder - This is the number of days prior to the install date that the secondary reminders are sent out.</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_chfa_amps.secondary_reminder</name>
+        <read_roles/>
+        <suffix>secondary_reminder</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>tim.harris</sys_created_by>
+        <sys_created_on>2017-03-28 14:28:40</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>437c9a990f79b6004a98e64be1050e91</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_chfa_amps.secondary_reminder</sys_name>
+        <sys_package display_value="AMPS" source="x_chfa_amps">06092f3613d5f200d9c75d322244b022</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AMPS">06092f3613d5f200d9c75d322244b022</sys_scope>
+        <sys_update_name>sys_properties_437c9a990f79b6004a98e64be1050e91</sys_update_name>
+        <sys_updated_by>tim.harris</sys_updated_by>
+        <sys_updated_on>2017-03-28 14:33:49</sys_updated_on>
+        <type>integer</type>
+        <value>21</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=437c9a990f79b6004a98e64be1050e91"/>
+</record_update>

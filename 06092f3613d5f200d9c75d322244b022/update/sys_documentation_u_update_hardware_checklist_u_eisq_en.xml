@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_eisq" label="EISQ" language="en" table="u_update_hardware_checklist">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_eisq</element>
+            <help/>
+            <hint/>
+            <label>EISQ</label>
+            <language>en</language>
+            <name>u_update_hardware_checklist</name>
+            <plural>EISQs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>sandeep.gunnam</sys_created_by>
+            <sys_created_on>2017-03-30 13:25:44</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_id>6041a0ce137d7640d9c75d322244b019</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>EISQ</sys_name>
+            <sys_package display_value="AMPS" source="x_chfa_amps">06092f3613d5f200d9c75d322244b022</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="AMPS">06092f3613d5f200d9c75d322244b022</sys_scope>
+            <sys_update_name>sys_documentation_u_update_hardware_checklist_u_eisq_en</sys_update_name>
+            <sys_updated_by>sandeep.gunnam</sys_updated_by>
+            <sys_updated_on>2017-03-30 13:25:44</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

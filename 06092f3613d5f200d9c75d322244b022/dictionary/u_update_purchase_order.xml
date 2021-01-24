@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="Update Purchase Order" max_length="40" name="u_update_purchase_order" sizeclass="0" type="collection">
+        <element attributes="import_attribute_name=ANNUAL_NET_PRICE,edge_encryption_enabled=true" label="ANNUAL_NET_PRICE" max_length="40" name="u_annual_net_price" type="string"/>
+        <element attributes="import_attribute_name=BILLING_FREQUENCY,edge_encryption_enabled=true" label="BILLING_FREQUENCY" max_length="40" name="u_billing_frequency" type="string"/>
+        <element attributes="import_attribute_name=BILL_BY_ID,edge_encryption_enabled=true" label="BILL_BY_ID" max_length="40" name="u_bill_by_id" type="string"/>
+        <element attributes="import_attribute_name=BILL_CYCLE_ID,edge_encryption_enabled=true" label="BILL_CYCLE_ID" max_length="40" name="u_bill_cycle_id" type="string"/>
+        <element attributes="import_attribute_name=BILL_SOURCE_ID,edge_encryption_enabled=true" label="BILL_SOURCE_ID" max_length="40" name="u_bill_source_id" type="string"/>
+        <element attributes="import_attribute_name=BILL_TO_CUST_ID_ADDRESS_SEQ_NUM,edge_encryption_enabled=true" label="BILL_TO_CUST_ID_ADDRESS_SEQ_NUM" max_length="40" name="u_bill_to_cust_ddress_seq_num" type="string"/>
+        <element attributes="import_attribute_name=BILL_TYPE_ID,edge_encryption_enabled=true" label="BILL_TYPE_ID" max_length="40" name="u_bill_type_id" type="string"/>
+        <element attributes="import_attribute_name=BI_CURRENCY_CD,edge_encryption_enabled=true" label="BI_CURRENCY_CD" max_length="40" name="u_bi_currency_cd" type="string"/>
+        <element attributes="import_attribute_name=BUNDLE_NAME,edge_encryption_enabled=true" label="BUNDLE_NAME" max_length="40" name="u_bundle_name" type="string"/>
+        <element attributes="import_attribute_name=BUSINESS_UNIT,edge_encryption_enabled=true" label="BUSINESS_UNIT" max_length="40" name="u_business_unit" type="string"/>
+        <element attributes="import_attribute_name=CONTRACTED_FRIEGHT_AMOUNT,edge_encryption_enabled=true" label="CONTRACTED_FRIEGHT_AMOUNT" max_length="40" name="u_contracted_frieght_amount" type="string"/>
+        <element attributes="import_attribute_name=DESCR,edge_encryption_enabled=true" label="DESCR" max_length="40" name="u_descr" type="string"/>
+        <element attributes="import_attribute_name=ENTITLE_END_DATE(MM/DD/YY),edge_encryption_enabled=true" label="ENTITLE_END_DATE(MM/DD/YY)" max_length="40" name="u_entitle_end_date_mm_dd_yy_" type="string"/>
+        <element attributes="import_attribute_name=ENTITLE_START_DATE(MM/DD/YY),edge_encryption_enabled=true" label="ENTITLE_START_DATE(MM/DD/YY)" max_length="40" name="u_entitle_start_date_mm_dd_yy_" type="string"/>
+        <element attributes="import_attribute_name=FREIGHT_METHOD,edge_encryption_enabled=true" label="FREIGHT_METHOD" max_length="40" name="u_freight_method" type="string"/>
+        <element attributes="import_attribute_name=FROM_DT,edge_encryption_enabled=true" label="FROM_DT" max_length="40" name="u_from_dt" type="string"/>
+        <element attributes="import_attribute_name=HARDWARE_ROLE,edge_encryption_enabled=true" label="HARDWARE_ROLE" max_length="40" name="u_hardware_role" type="string"/>
+        <element attributes="import_attribute_name=IDENTIFIER,edge_encryption_enabled=true" label="IDENTIFIER" max_length="40" name="u_identifier" type="string"/>
+        <element attributes="import_attribute_name=INTERNAL_FLAG,edge_encryption_enabled=true" label="INTERNAL_FLAG" max_length="40" name="u_internal_flag" type="string"/>
+        <element attributes="import_attribute_name=INTFC_ID,edge_encryption_enabled=true" label="INTFC_ID" max_length="40" name="u_intfc_id" type="string"/>
+        <element attributes="import_attribute_name=INTFC_LINE_NUM,edge_encryption_enabled=true" label="INTFC_LINE_NUM" max_length="40" name="u_intfc_line_num" type="string"/>
+        <element attributes="import_attribute_name=INTMED_SHIP_IDDELIVER_TO_CUST_ID,edge_encryption_enabled=true" label="INTMED_SHIP_IDDELIVER_TO_CUST_ID" max_length="40" name="u_intmed_ship__ver_to_cust_id" type="string"/>
+        <element attributes="import_attribute_name=LINE_SEQ_NUM,edge_encryption_enabled=true" label="LINE_SEQ_NUM" max_length="40" name="u_line_seq_num" type="string"/>
+        <element attributes="import_attribute_name=NOTES_SEQ_NUM,edge_encryption_enabled=true" label="NOTES_SEQ_NUM" max_length="40" name="u_notes_seq_num" type="string"/>
+        <element attributes="import_attribute_name=NOTE_TYPE,edge_encryption_enabled=true" label="NOTE_TYPE" max_length="40" name="u_note_type" type="string"/>
+        <element attributes="import_attribute_name=ORDER_GRP,edge_encryption_enabled=true" label="ORDER_GRP" max_length="40" name="u_order_grp" type="string"/>
+        <element attributes="import_attribute_name=PO_DATE,edge_encryption_enabled=true" label="PO_DATE" max_length="40" name="u_po_date" type="string"/>
+        <element attributes="import_attribute_name=PO_REF,edge_encryption_enabled=true" label="PO_REF" max_length="40" name="u_po_ref" type="string"/>
+        <element attributes="import_attribute_name=PYMT_TERMS_CD,edge_encryption_enabled=true" label="PYMT_TERMS_CD" max_length="40" name="u_pymt_terms_cd" type="string"/>
+        <element attributes="import_attribute_name=QTY,edge_encryption_enabled=true" label="QTY" max_length="40" name="u_qty" type="string"/>
+        <element attributes="import_attribute_name=REFERENCE_ORDER_NUMBER,edge_encryption_enabled=true" label="REFERENCE_ORDER_NUMBER" max_length="40" name="u_reference_order_number" type="string"/>
+        <element attributes="import_attribute_name=REQUESTED_ARRIVAL_DATE,edge_encryption_enabled=true" label="REQUESTED_ARRIVAL_DATE" max_length="40" name="u_requested_arrival_date" type="string"/>
+        <element attributes="import_attribute_name=RMA_ID,edge_encryption_enabled=true" label="RMA_ID" max_length="40" name="u_rma_id" type="string"/>
+        <element attributes="import_attribute_name=SHIP_INSTRUCTIONS,edge_encryption_enabled=true" label="SHIP_INSTRUCTIONS" max_length="40" name="u_ship_instructions" type="string"/>
+        <element attributes="import_attribute_name=SHIP_TO_ADDR_NUM,edge_encryption_enabled=true" label="SHIP_TO_ADDR_NUM" max_length="40" name="u_ship_to_addr_num" type="string"/>
+        <element attributes="import_attribute_name=SHIP_TO_CUST_ID,edge_encryption_enabled=true" label="SHIP_TO_CUST_ID" max_length="40" name="u_ship_to_cust_id" type="string"/>
+        <element attributes="import_attribute_name=SOLD_TO_ADDR_NUM,edge_encryption_enabled=true" label="SOLD_TO_ADDR_NUM" max_length="40" name="u_sold_to_addr_num" type="string"/>
+        <element attributes="import_attribute_name=SOLD_TO_CUST_ID,edge_encryption_enabled=true" label="SOLD_TO_CUST_ID" max_length="40" name="u_sold_to_cust_id" type="string"/>
+        <element attributes="import_attribute_name=SW_KEY,edge_encryption_enabled=true" label="SW_KEY" max_length="40" name="u_sw_key" type="string"/>
+        <element attributes="import_attribute_name=TEXT254,edge_encryption_enabled=true" label="TEXT254" max_length="40" name="u_text254" type="string"/>
+        <element attributes="import_attribute_name=TO_DT,edge_encryption_enabled=true" label="TO_DT" max_length="40" name="u_to_dt" type="string"/>
+        <element attributes="import_attribute_name=TRANS_TYPE_BI,edge_encryption_enabled=true" label="TRANS_TYPE_BI" max_length="40" name="u_trans_type_bi" type="string"/>
+        <element attributes="import_attribute_name=TRANS_TYPE_BI_SEQ,edge_encryption_enabled=true" label="TRANS_TYPE_BI_SEQ" max_length="40" name="u_trans_type_bi_seq" type="string"/>
+        <element attributes="import_attribute_name=UNIT_AMT,edge_encryption_enabled=true" label="UNIT_AMT" max_length="40" name="u_unit_amt" type="string"/>
+        <element attributes="import_attribute_name=VANTATIVE_CASE_ID,edge_encryption_enabled=true" label="VANTATIVE_CASE_ID" max_length="40" name="u_vantative_case_id" type="string"/>
+    </element>
+</database>

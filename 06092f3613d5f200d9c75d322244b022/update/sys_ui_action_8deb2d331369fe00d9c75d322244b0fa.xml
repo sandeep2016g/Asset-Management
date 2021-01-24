@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name/>
+        <active>true</active>
+        <client>false</client>
+        <client_script_v2/>
+        <comments/>
+        <condition/>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <hint>Click here to send Purchase Order to vendor</hint>
+        <isolate_script>false</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>Email PO</name>
+        <onclick>generatePO()</onclick>
+        <order>1005</order>
+        <script><![CDATA[//Declaring output variable with the file headers
+var output = "INTFC_ID,INTFC_LINE_NUM,TRANS_TYPE_BI,TRANS_TYPE_BI_SEQ,BUSINESS_UNIT,SOLD_TO_CUST_ID,SOLD_TO_ADDR_NUM,BILL_TO_CUST_ID,ADDRESS_SEQ_NUM,SHIP_TO_CUST_ID,SHIP_TO_ADDR_NUM,INTMED_SHIP_ID,DELIVER_TO_CUST_ID,BILL_TYPE_ID,PO_REF,PO_DATE,REFERENCE_ORDER_NUMBER,LINE_SEQ_NUM,BUNDLE_NAME,IDENTIFIER,DESCR,QTY,BI_CURRENCY_CD,UNIT_AMT,ANNUAL_NET_PRICE,SW_KEY,ENTITLE_START_DATE(MM/DD/YY),ENTITLE_END_DATE(MM/DD/YY),FROM_DT,TO_DT,NOTES_SEQ_NUM,SHIP_INSTRUCTIONS,NOTE_TYPE,INTERNAL_FLAG,HARDWARE_ROLE,TEXT254,BILL_SOURCE_ID,BILLING_FREQUENCY,BILL_CYCLE_ID,PYMT_TERMS_CD,ORDER_GRP,BILL_BY_ID,VANTATIVE_CASE_ID,RMA_ID,FREIGHT_METHOD,CONTRACTED_FRIEGHT_AMOUNT,REQUESTED_ARRIVAL_DATE"; //header for csv file
+var table = "x_chfa_amps_purchase_order_line";
+var table1 = "x_chfa_amps_purchase_order";
+var table2 = "sys_email";
+var recordId = ""; //using for attachment file
+var date = new GlideDate();
+//Querying the purchase order line table to get all the purchase orders for the current record.
+var gr = new GlideRecord(table);
+gr.addEncodedQuery("purchase_order="+current.sys_id);
+gr.query();
+var count = 0;
+while (gr.next()) {
+	count++;
+	//Generating rows for the file with the purchase order details
+	output += "\n" + "1" + ","
+				   + "CONTRACT" + "," 
+				   + "22" +","
+				   + " "	+","
+				   + " " + "," 	
+	               + " "	+","
+				   + " " + "," 	
+				   + " "	+","
+				   + " " + "," 	
+				   + gr.purchase_order.parent.location.u_pos_location_id +","
+				   + " "	+","
+				   + " " + "," 	
+				   + gr.purchase_order.parent.location.u_pos_location_id +","	
+				   + " " + "," 
+	               + gr.purchase_order.getDisplayValue() + ","
+	               + date + ","
+				   + " " + "," 	
+				   + " "	+","
+				   + " " + "," 
+				   + gr.equipment.getDisplayValue() + ","
+	               + " " + ","
+				   + gr.quantity + ","
+				   + " " + ","
+				   + gr.ext_price + ","
+				   + " " + "," 	
+				   + " " +","
+				   + " " + "," 
+				   + " " + "," 	
+				   + " " +","
+				   + " " + "," 
+		           + " " + "," 	
+				   + " " +","
+				   + " " + "," 
+	               + " " + "," 	
+				   + " " +","
+				   + " " + "," 
+				   + " " + "," 	
+				   + " " +","
+				   + " " + "," 
+				   + " " + "," 	
+				   + " " +","
+				   + " " + "," 
+		           + " " + "," 	
+				   + " " +","
+				   + " " + "," 
+	               + " " + "," 	
+				   + " ";
+}
+
+if (!recordId) {
+	recordId = current.sys_id;
+}
+writeAttachmentFile(output);
+
+//Setting the "sent" field date to current date.
+current.sent = new GlideDateTime();
+current.update();
+
+gs.addInfoMessage("Purchase Order has been sent to the vendor");
+action.setRedirectURL(current);
+
+function writeAttachmentFile(data) {
+	var attachment = new global.Attachment();
+	var attachmentRec = attachment.write(table1, recordId, "Purchase Order.csv", "text/csv", data);
+}]]></script>
+        <show_insert>true</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>sandeep.gunnam</sys_created_by>
+        <sys_created_on>2017-03-23 19:08:32</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8deb2d331369fe00d9c75d322244b0fa</sys_id>
+        <sys_mod_count>48</sys_mod_count>
+        <sys_name>Email PO</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AMPS" source="x_chfa_amps">06092f3613d5f200d9c75d322244b022</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AMPS">06092f3613d5f200d9c75d322244b022</sys_scope>
+        <sys_update_name>sys_ui_action_8deb2d331369fe00d9c75d322244b0fa</sys_update_name>
+        <sys_updated_by>sandeep.gunnam</sys_updated_by>
+        <sys_updated_on>2017-04-02 22:33:14</sys_updated_on>
+        <table>x_chfa_amps_purchase_order</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>

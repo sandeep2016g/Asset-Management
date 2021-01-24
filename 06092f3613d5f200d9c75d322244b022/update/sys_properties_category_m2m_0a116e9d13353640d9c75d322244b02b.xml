@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m">
+    <sys_properties_category_m2m action="INSERT_OR_UPDATE">
+        <category display_value="AMPS">c245c12c13e5f600d9c75d322244b007</category>
+        <order>100</order>
+        <property display_value="x_chfa_amps.POS Refresh Date" name="x_chfa_amps.POS Refresh Date">4ac0665113753640d9c75d322244b04e</property>
+        <sys_class_name>sys_properties_category_m2m</sys_class_name>
+        <sys_created_by>sandeep.gunnam</sys_created_by>
+        <sys_created_on>2017-03-28 14:48:48</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>0a116e9d13353640d9c75d322244b02b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_chfa_amps.POS Refresh Date.AMPS</sys_name>
+        <sys_package display_value="AMPS" source="x_chfa_amps">06092f3613d5f200d9c75d322244b022</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AMPS">06092f3613d5f200d9c75d322244b022</sys_scope>
+        <sys_update_name>sys_properties_category_m2m_0a116e9d13353640d9c75d322244b02b</sys_update_name>
+        <sys_updated_by>sandeep.gunnam</sys_updated_by>
+        <sys_updated_on>2017-03-28 14:48:48</sys_updated_on>
+    </sys_properties_category_m2m>
+</record_update>

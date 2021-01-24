@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="" label="NCR Data" language="en" table="u_ncr_date">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>NCR Data</label>
+            <language>en</language>
+            <name>u_ncr_date</name>
+            <plural>NCR Data</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>sandeep.gunnam</sys_created_by>
+            <sys_created_on>2017-03-27 23:38:44</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_id>83c017051371f240d9c75d322244b065</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>NCR Data</sys_name>
+            <sys_package display_value="AMPS" source="x_chfa_amps">06092f3613d5f200d9c75d322244b022</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="AMPS">06092f3613d5f200d9c75d322244b022</sys_scope>
+            <sys_update_name>sys_documentation_u_ncr_date__en</sys_update_name>
+            <sys_updated_by>sandeep.gunnam</sys_updated_by>
+            <sys_updated_on>2017-03-27 23:38:44</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="NCR Data" max_length="40" name="u_ncr_date" sizeclass="0" type="collection">
+        <element attributes="import_attribute_name=Address,edge_encryption_enabled=true" label="Address" max_length="55" name="u_address" type="string"/>
+        <element attributes="import_attribute_name=Address2,edge_encryption_enabled=true" label="Address2" max_length="55" name="u_address2" type="string"/>
+        <element attributes="import_attribute_name=BillTo,edge_encryption_enabled=true" label="BillTo" max_length="40" name="u_billto" type="string"/>
+        <element attributes="import_attribute_name=City,edge_encryption_enabled=true" label="City" max_length="40" name="u_city" type="string"/>
+        <element attributes="import_attribute_name=Country,edge_encryption_enabled=true" label="Country" max_length="40" name="u_country" type="string"/>
+        <element attributes="import_attribute_name=CurrentSN,edge_encryption_enabled=true" label="CurrentSN" max_length="40" name="u_currentsn" type="string"/>
+        <element attributes="import_attribute_name=EntitlementID1,edge_encryption_enabled=true" label="EntitlementID1" max_length="40" name="u_entitlementid1" type="string"/>
+        <element attributes="import_attribute_name=ï»¿Page_Num,edge_encryption_enabled=true" label="ï»¿Page_Num" max_length="40" name="u_ï__page_num" type="string"/>
+        <element attributes="import_attribute_name=Model,edge_encryption_enabled=true" label="Model" max_length="40" name="u_model" type="string"/>
+        <element attributes="import_attribute_name=Postal_Code,edge_encryption_enabled=true" label="Postal_Code" max_length="40" name="u_postal_code" type="string"/>
+        <element attributes="import_attribute_name=PriceClass,edge_encryption_enabled=true" label="PriceClass" max_length="40" name="u_priceclass" type="string"/>
+        <element attributes="import_attribute_name=PSI,edge_encryption_enabled=true" label="PSI" max_length="40" name="u_psi" type="string"/>
+        <element attributes="import_attribute_name=SalesOrder,edge_encryption_enabled=true" label="SalesOrder" max_length="40" name="u_salesorder" type="string"/>
+        <element attributes="import_attribute_name=Service_Product,edge_encryption_enabled=true" label="Service_Product" max_length="40" name="u_service_product" type="string"/>
+        <element attributes="import_attribute_name=Service_Product_Desc,edge_encryption_enabled=true" label="Service_Product_Desc" max_length="40" name="u_service_product_desc" type="string"/>
+        <element attributes="import_attribute_name=ShipDate,edge_encryption_enabled=true" label="ShipDate" max_length="40" name="u_shipdate" type="string"/>
+        <element attributes="import_attribute_name=Site,edge_encryption_enabled=true" label="Site" max_length="43" name="u_site" type="string"/>
+        <element attributes="import_attribute_name=Site_Status_EM,edge_encryption_enabled=true" label="Site_Status_EM" max_length="40" name="u_site_status_em" type="string"/>
+        <element attributes="import_attribute_name=State,edge_encryption_enabled=true" label="State" max_length="40" name="u_state" type="string"/>
+    </element>
+</database>

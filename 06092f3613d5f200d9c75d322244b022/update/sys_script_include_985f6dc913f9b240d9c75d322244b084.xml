@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_chfa_amps.EmailFileImportUtils</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>EmailFileImportUtils</name>
+        <script><![CDATA[var EmailFileImportUtils = Class.create();  
+EmailFileImportUtils.prototype = {  
+    initialize: function() {  
+    },  
+      
+    scheduleImport: function(dataSourceID, transformMapID) {  
+        /* 
+         * Create scheduled job to process import 
+         * 
+         * The inbound email action will generate an import data source, however the attachment isn't copied to the data source until 
+         * after the insert of the record.  The code below will create a scheduled job to process the import 30 seconds later 
+         * so that attachment has time to be copied to the data source from the email. 
+         */ 
+        var schRec = new GlideRecord("sys_trigger");  
+        schRec.name = "Load Data Source: " + dataSourceID;  
+        schRec.trigger_type = 0;  // Run Once  
+        schRec.script = "new x_chfa_amps.EmailFileImportUtils().loadImportSet('" + dataSourceID + "', '" + transformMapID + "')";  
+          
+        var nextAction = new GlideDateTime();  
+        nextAction.addSeconds(30);  // 30 seconds should be enough time however this can be changed.  
+        schRec.next_action = nextAction;  
+        schRec.insert();  
+    },  
+      
+    loadImportSet: function(dataSourceID, transformMapID) {  
+        // Get Datasource Record  
+        var dataSource = new GlideRecord("sys_data_source");  
+        dataSource.get(dataSourceID);  
+          
+        // Process data source file  
+        var loader = new GlideImportSetLoader();  
+        var importSetRec = loader.getImportSetGr(dataSource);  
+        var ranload = loader.loadImportSetTable(importSetRec, dataSource);  
+        importSetRec.state = "loaded";  
+        importSetRec.update();  
+          
+        // Transform import set  
+        var transformWorker = new GlideImportSetTransformerWorker(importSetRec.sys_id, transformMapID);  
+        transformWorker.setBackground(true);  
+        transformWorker.start();  
+    },  
+      
+    type: 'EmailFileImportUtils'  
+}; ]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>sandeep.gunnam</sys_created_by>
+        <sys_created_on>2017-03-27 16:39:08</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>985f6dc913f9b240d9c75d322244b084</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>EmailFileImportUtils</sys_name>
+        <sys_package display_value="AMPS" source="x_chfa_amps">06092f3613d5f200d9c75d322244b022</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AMPS">06092f3613d5f200d9c75d322244b022</sys_scope>
+        <sys_update_name>sys_script_include_985f6dc913f9b240d9c75d322244b084</sys_update_name>
+        <sys_updated_by>sandeep.gunnam</sys_updated_by>
+        <sys_updated_on>2017-03-29 20:39:23</sys_updated_on>
+    </sys_script_include>
+</record_update>

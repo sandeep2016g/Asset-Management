@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Purchase Order Line" max_length="40" name="x_chfa_amps_purchase_order_line" sizeclass="0" type="collection">
+        <element attributes="auto_completer=AJAXTableCompleter,ref_ac_columns=hardware,ref_ac_order_by=hardware,ref_ac_display_value=false" label="Equipment" max_length="32" name="equipment" reference="x_chfa_amps_purchase_order_hwr_opt" type="reference"/>
+        <element calculation="//(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;&#13;&#10;current. ext_price  = current.quantity*current.equipment.unit_price;&#13;&#10;&#13;&#10;&#13;&#10;//})(current);" label="Ext. Price" max_length="40" name="ext_price" type="integer" virtual="true"/>
+        <element label="Purchase Order" max_length="32" name="purchase_order" reference="x_chfa_amps_purchase_order" type="reference"/>
+        <element label="Quantity" max_length="40" name="quantity" type="integer"/>
+        <index name="index">
+            <element name="purchase_order"/>
+        </index>
+        <index name="index2">
+            <element name="equipment"/>
+        </index>
+    </element>
+</database>

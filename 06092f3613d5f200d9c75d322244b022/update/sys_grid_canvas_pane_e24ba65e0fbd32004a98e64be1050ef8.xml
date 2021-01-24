@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas_pane">
+    <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+        <grid_canvas display_value="PA Monthly Reports">2a4ba65e0fbd32004a98e64be1050ef7</grid_canvas>
+        <height>3</height>
+        <portal_widget display_value="Created 2016-09-08 04:26:09 PM">fbb6a4b0137562001d7ab2228144b04f</portal_widget>
+        <posx>0</posx>
+        <posy>3</posy>
+        <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+        <sys_created_by>sandeep.gunnam</sys_created_by>
+        <sys_created_on>2017-03-31 18:07:16</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>e24ba65e0fbd32004a98e64be1050ef8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>2a4ba65e0fbd32004a98e64be1050ef7</sys_name>
+        <sys_package display_value="AMPS" source="x_chfa_amps">06092f3613d5f200d9c75d322244b022</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AMPS">06092f3613d5f200d9c75d322244b022</sys_scope>
+        <sys_update_name>sys_grid_canvas_pane_e24ba65e0fbd32004a98e64be1050ef8</sys_update_name>
+        <sys_updated_by>sandeep.gunnam</sys_updated_by>
+        <sys_updated_on>2017-03-31 18:07:19</sys_updated_on>
+        <width>12</width>
+    </sys_grid_canvas_pane>
+</record_update>

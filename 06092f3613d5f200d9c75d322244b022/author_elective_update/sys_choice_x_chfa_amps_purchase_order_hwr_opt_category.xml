@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="category" table="x_chfa_amps_purchase_order_hwr_opt" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>category</element>
+            <name>x_chfa_amps_purchase_order_hwr_opt</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>sandeep.gunnam</sys_created_by>
+            <sys_created_on>2017-03-10 18:29:01</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>c09391dcdb82720016a05d50cf96199b</sys_id>
+            <sys_mod_count>6</sys_mod_count>
+            <sys_name>category</sys_name>
+            <sys_package display_value="AMPS" source="x_chfa_amps">06092f3613d5f200d9c75d322244b022</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="AMPS">06092f3613d5f200d9c75d322244b022</sys_scope>
+            <sys_update_name>sys_choice_x_chfa_amps_purchase_order_hwr_opt_category</sys_update_name>
+            <sys_updated_by>sandeep.gunnam</sys_updated_by>
+            <sys_updated_on>2017-03-30 15:16:10</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>category</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>KPS</label>
+            <language>en</language>
+            <name>x_chfa_amps_purchase_order_hwr_opt</name>
+            <sequence>0</sequence>
+            <sys_created_by>sandeep.gunnam</sys_created_by>
+            <sys_created_on>2017-03-10 18:29:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d8e6e22713157600d9c75d322244b056</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sandeep.gunnam</sys_updated_by>
+            <sys_updated_on>2017-03-10 18:29:02</sys_updated_on>
+            <value>KPS</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>category</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Miscellaneous</label>
+            <language>en</language>
+            <name>x_chfa_amps_purchase_order_hwr_opt</name>
+            <sequence>0</sequence>
+            <sys_created_by>sandeep.gunnam</sys_created_by>
+            <sys_created_on>2017-03-10 18:29:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>28e6e22713157600d9c75d322244b068</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sandeep.gunnam</sys_updated_by>
+            <sys_updated_on>2017-03-10 18:29:02</sys_updated_on>
+            <value>Miscellaneous</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>category</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>POS and Peripherals</label>
+            <language>en</language>
+            <name>x_chfa_amps_purchase_order_hwr_opt</name>
+            <sequence>0</sequence>
+            <sys_created_by>sandeep.gunnam</sys_created_by>
+            <sys_created_on>2017-03-10 18:29:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>18e6e22713157600d9c75d322244b04d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sandeep.gunnam</sys_updated_by>
+            <sys_updated_on>2017-03-10 18:29:01</sys_updated_on>
+            <value>POS and Peripherals</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>category</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Powervars</label>
+            <language>en</language>
+            <name>x_chfa_amps_purchase_order_hwr_opt</name>
+            <sequence>0</sequence>
+            <sys_created_by>sandeep.gunnam</sys_created_by>
+            <sys_created_on>2017-03-10 18:29:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e0e6e22713157600d9c75d322244b05e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sandeep.gunnam</sys_updated_by>
+            <sys_updated_on>2017-03-10 18:29:02</sys_updated_on>
+            <value>Powervars</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>category</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Scanners</label>
+            <language>en</language>
+            <name>x_chfa_amps_purchase_order_hwr_opt</name>
+            <sequence>0</sequence>
+            <sys_created_by>sandeep.gunnam</sys_created_by>
+            <sys_created_on>2017-03-10 18:29:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>68e6e22713157600d9c75d322244b063</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sandeep.gunnam</sys_updated_by>
+            <sys_updated_on>2017-03-10 18:29:02</sys_updated_on>
+            <value>Scanners</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

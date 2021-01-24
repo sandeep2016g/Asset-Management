@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="cmdb_ci_server" version="2" view="RPTaf932f33db70030016a05d50cf96193e">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>os_version</element>
+            <list_id display_value="cmdb_ci_server" element="NULL" name="cmdb_ci_server" parent="NULL" relationship="NULL" sys_domain="global" view="a3932f33db70030016a05d50cf961943">50a36f33db70030016a05d50cf961945</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-09-01 17:12:41</sys_created_on>
+            <sys_id>d8a36f33db70030016a05d50cf961945</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-09-01 17:12:41</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>cmdb_ci_server</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-09-01 17:12:41</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>50a36f33db70030016a05d50cf961945</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>cmdb_ci_server</sys_name>
+            <sys_package display_value="AMPS" source="x_chfa_amps">06092f3613d5f200d9c75d322244b022</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="AMPS">06092f3613d5f200d9c75d322244b022</sys_scope>
+            <sys_update_name>sys_ui_list_cmdb_ci_server_RPTaf932f33db70030016a05d50cf96193e</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-09-01 17:12:41</sys_updated_on>
+            <sys_user/>
+            <view display_value="Rptaf932f33db70030016a05d50cf96193e" name="RPTaf932f33db70030016a05d50cf96193e">a3932f33db70030016a05d50cf961943</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

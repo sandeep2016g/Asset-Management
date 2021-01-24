@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_in_email_action">
+    <sysevent_in_email_action action="INSERT_OR_UPDATE">
+        <action>record_action</action>
+        <active>true</active>
+        <assignment_operator/>
+        <condition_script>email.subject.startsWith("Process Attachment")</condition_script>
+        <description/>
+        <event_name>email.read</event_name>
+        <filter_condition/>
+        <from/>
+        <name>Hardware Checklist</name>
+        <order>0</order>
+        <reply_email/>
+        <required_roles/>
+        <script><![CDATA[gs.log ('TDI001 - Setting up data source');
+current.name = "Hardware Checklist" + gs.nowDateTime(); //append date time to name of data source for audit
+current.import_set_table_name = "x_chfa_amps_hardware_options";
+//current.import_set_yable_label = "attachment test";
+current.type= "File";
+current.format = "Excel";
+current.file_retrieval_method = "Attachment";
+
+var myNewDataSource = current.insert();
+
+gs.lg ('TD002 - Data source inserted with sys_id - ' + myNewDataSource);
+
+//point the scheduled import record to the new data source
+
+var gr2 = new GlideRecord ('scheduled_import_set');
+
+gr2.addQuery('name=Hardware Checklist'); 
+gr2.query();
+
+if (gr2.next()) {
+gs.log ('TDI003 - Found Scheduled Import definition');
+gr2.data_source = myNewDataSource;
+gr2.update();
+gs.log ('TDI004 - Scheduled Import definition updated to point to data source just added');
+
+Packages.com.snc.automation.TriggerSynchronizer.executeNow(gr2);
+
+} else {
+// add error conditions to email somebody that this has occurred
+gs.log('TDI005 - ERROR - Unable to locate scheduled import definition. Please contact your system administrator');
+}
+
+gs.log ('TDI007 - Inbound email processing complete');]]></script>
+        <stop_processing>false</stop_processing>
+        <sys_class_name>sysevent_in_email_action</sys_class_name>
+        <sys_created_by>sandeep.gunnam</sys_created_by>
+        <sys_created_on>2017-03-15 13:14:08</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8c1c034113617a00d9c75d322244b0fe</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Hardware Checklist</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AMPS" source="x_chfa_amps">06092f3613d5f200d9c75d322244b022</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AMPS">06092f3613d5f200d9c75d322244b022</sys_scope>
+        <sys_update_name>sysevent_in_email_action_8c1c034113617a00d9c75d322244b0fe</sys_update_name>
+        <sys_updated_by>sandeep.gunnam</sys_updated_by>
+        <sys_updated_on>2017-03-15 14:09:51</sys_updated_on>
+        <table>sys_data_source</table>
+        <template/>
+        <type>new</type>
+    </sysevent_in_email_action>
+</record_update>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="state" label="State" language="en" table="x_chfa_amps_pos_refresh">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>state</element>
+            <help/>
+            <hint/>
+            <label>State</label>
+            <language>en</language>
+            <name>x_chfa_amps_pos_refresh</name>
+            <plural>States</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>sandeep.gunnam</sys_created_by>
+            <sys_created_on>2017-03-08 20:18:12</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>d8bcac8313d9f200d9c75d322244b0cf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>State</sys_name>
+            <sys_package display_value="AMPS" source="x_chfa_amps">06092f3613d5f200d9c75d322244b022</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="AMPS">06092f3613d5f200d9c75d322244b022</sys_scope>
+            <sys_update_name>sys_documentation_x_chfa_amps_pos_refresh_state_en</sys_update_name>
+            <sys_updated_by>sandeep.gunnam</sys_updated_by>
+            <sys_updated_on>2017-03-08 20:18:12</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

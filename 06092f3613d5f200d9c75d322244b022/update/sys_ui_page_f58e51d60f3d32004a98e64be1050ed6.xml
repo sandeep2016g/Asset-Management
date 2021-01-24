@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script/>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_chfa_amps_Hardware Assets By Model.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>  
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+   <script type="text/javascript" src="/scripts/GlideV2ChartingIncludes.jsx?v=10-19-2014_0741"></script>  
+   <g2:evaluate var='jvar' object='true'>  
+   	   
+	  
+  var categories = [],  
+            series =[];  
+
+
+         // Setup Categories  
+	  
+		var count = new GlideAggregate('alm_hardware');
+		count.addEncodedQuery('model_category=81feb9c137101000deeabfc8bcbe5dc4');
+		count.addAggregate('COUNT', 'model');
+		count.query();   
+		while (count.next()) {
+			var category = count.model.getDisplayValue().toString();
+		//	var categoryCount =parseInt( count.getAggregate('COUNT', 'model'));	
+	   var categoryCount = 10;
+	        series.push(categoryCount);  
+			categories.push(category);		  
+		}
+	   
+        
+        series = new global.JSON().encode(series);  
+        categories = new global.JSON().encode(categories);  
+	  
+   	     
+								  
+   </g2:evaluate>
+	 <table class="wide">
+      <tr>
+         <td align="center">
+            <div id="custom_report" class="highcharts-container" style="width: 70%; height: 550px; text-align: left; line-height: normal; z-index: 0; font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Arial, Helvetica, sans-serif; font-size: 12px;" ></div>
+         </td>
+      </tr>
+   </table>
+   <script type="text/javascript">  
+	
+var chart1 = new Highcharts.Chart({  
+    chart: {
+    renderTo: 'custom_report',
+        type: 'column'
+    },
+    title: {
+        text: 'Hardware Models'
+    },
+    subtitle: {
+        text: ''
+    },
+    xAxis: {
+        categories: $[categories],
+        title: {
+            text: null
+        }
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Count',
+            align: 'high'
+        },
+        labels: {
+            overflow: 'justify'
+        }
+    },
+    tooltip: {
+        valueSuffix: ''
+    },
+    plotOptions: {
+        column: {
+            dataLabels: {
+                enabled: true
+            }
+        }
+    },
+    legend: {
+        layout: 'vertical',
+        align: 'right',
+        verticalAlign: 'top',
+        x: -40,
+        y: 80,
+        floating: true,
+        borderWidth: 1,
+      //  backgroundColor: (( Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+        shadow: true
+    },
+    credits: {
+        enabled: false
+    },
+    series: [{
+        name: 'Model',
+        data: $[series]
+    }]
+});
+ 
+	   var val1= "$[JS:series]";
+	//  alert(val1);
+	   
+   </script> 
+	
+	
+</j:jelly>]]></html>
+        <name>Hardware Assets By Model</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>sandeep.gunnam</sys_created_by>
+        <sys_created_on>2017-03-31 12:35:50</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>f58e51d60f3d32004a98e64be1050ed6</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>Hardware Assets By Model</sys_name>
+        <sys_package display_value="AMPS" source="x_chfa_amps">06092f3613d5f200d9c75d322244b022</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AMPS">06092f3613d5f200d9c75d322244b022</sys_scope>
+        <sys_update_name>sys_ui_page_f58e51d60f3d32004a98e64be1050ed6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-01-02 16:07:32</sys_updated_on>
+    </sys_ui_page>
+</record_update>

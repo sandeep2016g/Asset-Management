@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="Restaurant POS Install Date" max_length="40" name="u_restaurant_pos_install_date" sizeclass="0" type="collection">
+        <element attributes="import_attribute_name=A,edge_encryption_enabled=true" label="A" max_length="40" name="u_a" type="string"/>
+        <element attributes="import_attribute_name=AA,edge_encryption_enabled=true" label="AA" max_length="40" name="u_aa" type="string"/>
+        <element attributes="import_attribute_name=AB,edge_encryption_enabled=true" label="AB" max_length="40" name="u_ab" type="string"/>
+        <element attributes="import_attribute_name=AC,edge_encryption_enabled=true" label="AC" max_length="199" name="u_ac" type="string"/>
+        <element attributes="import_attribute_name=B,edge_encryption_enabled=true" label="B" max_length="40" name="u_b" type="string"/>
+        <element attributes="import_attribute_name=C,edge_encryption_enabled=true" label="C" max_length="80" name="u_c" type="string"/>
+        <element attributes="import_attribute_name=D,edge_encryption_enabled=true" label="D" max_length="40" name="u_d" type="string"/>
+        <element attributes="import_attribute_name=E,edge_encryption_enabled=true" label="E" max_length="40" name="u_e" type="string"/>
+        <element attributes="import_attribute_name=F,edge_encryption_enabled=true" label="F" max_length="40" name="u_f" type="string"/>
+        <element attributes="import_attribute_name=G,edge_encryption_enabled=true" label="G" max_length="157" name="u_g" type="string"/>
+        <element attributes="import_attribute_name=H,edge_encryption_enabled=true" label="H" max_length="40" name="u_h" type="string"/>
+        <element attributes="import_attribute_name=I,edge_encryption_enabled=true" label="I" max_length="126" name="u_i" type="string"/>
+        <element attributes="import_attribute_name=J,edge_encryption_enabled=true" label="J" max_length="40" name="u_j" type="string"/>
+        <element attributes="import_attribute_name=K,edge_encryption_enabled=true" label="K" max_length="157" name="u_k" type="string"/>
+        <element attributes="import_attribute_name=L,edge_encryption_enabled=true" label="L" max_length="40" name="u_l" type="string"/>
+        <element attributes="import_attribute_name=M,edge_encryption_enabled=true" label="M" max_length="76" name="u_m" type="string"/>
+        <element attributes="import_attribute_name=N,edge_encryption_enabled=true" label="N" max_length="40" name="u_n" type="string"/>
+        <element attributes="import_attribute_name=O,edge_encryption_enabled=true" label="O" max_length="157" name="u_o" type="string"/>
+        <element attributes="import_attribute_name=P,edge_encryption_enabled=true" label="P" max_length="40" name="u_p" type="string"/>
+        <element attributes="import_attribute_name=Q,edge_encryption_enabled=true" label="Q" max_length="65" name="u_q" type="string"/>
+        <element attributes="import_attribute_name=R,edge_encryption_enabled=true" label="R" max_length="40" name="u_r" type="string"/>
+        <element attributes="import_attribute_name=S,edge_encryption_enabled=true" label="S" max_length="49" name="u_s" type="string"/>
+        <element attributes="import_attribute_name=T,edge_encryption_enabled=true" label="T" max_length="40" name="u_t" type="string"/>
+        <element attributes="import_attribute_name=U,edge_encryption_enabled=true" label="U" max_length="157" name="u_u" type="string"/>
+        <element attributes="import_attribute_name=V,edge_encryption_enabled=true" label="V" max_length="40" name="u_v" type="string"/>
+        <element attributes="import_attribute_name=W,edge_encryption_enabled=true" label="W" max_length="92" name="u_w" type="string"/>
+        <element attributes="import_attribute_name=X,edge_encryption_enabled=true" label="X" max_length="40" name="u_x" type="string"/>
+        <element attributes="import_attribute_name=Y,edge_encryption_enabled=true" label="Y" max_length="40" name="u_y" type="string"/>
+        <element attributes="import_attribute_name=Z,edge_encryption_enabled=true" label="Z" max_length="40" name="u_z" type="string"/>
+    </element>
+</database>

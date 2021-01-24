@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <name>Populate Refresh Data</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="">9cd25b381387d24058af33076144b0ae</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2017-03-20 18:19:31</run_start>
+        <run_time>1970-01-01 09:00:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[//Querying the location table
+var gr = new GlideRecord('cmn_location');
+gr.addEncodedQuery('u_pos_install_date!=NULL');
+gr.query();
+while(gr.next()){
+	var ref = gr.getDisplayValue('u_pos_install_date');
+	ref = new GlideDateTime(ref);
+	
+	var today = new GlideDateTime();
+	// Duration in days
+	var dur = GlideDateTime.subtract(ref , today); // returns a GlideDuration object
+	var days = dur.getRoundedDayPart();
+	//Comparing the duration between last installed date and current date
+	if(days ==1)
+		{
+			//If POS requires refresh creating records in pos refresh table
+		var gr1 = new GlideRecord('x_chfa_amps_pos_refresh');
+		gr1.initialize();
+		ref.addYearsUTC(5); //Setting the install date to 5 years from last install date.
+		gr1.setValue('location',gr.sys_id);
+		gr1.setValue('install_date',ref.getDate());
+		
+		gr1.insert();
+	}
+}
+
+
+]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>sandeep.gunnam</sys_created_by>
+        <sys_created_on>2017-03-20 18:33:37</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>2a9402be13617e00d9c75d322244b050</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Populate Refresh Data</sys_name>
+        <sys_package display_value="AMPS" source="x_chfa_amps">06092f3613d5f200d9c75d322244b022</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AMPS">06092f3613d5f200d9c75d322244b022</sys_scope>
+        <sys_update_name>sysauto_script_2a9402be13617e00d9c75d322244b050</sys_update_name>
+        <sys_updated_by>sandeep.gunnam</sys_updated_by>
+        <sys_updated_on>2017-03-22 12:35:00</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

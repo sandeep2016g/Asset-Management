@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_chfa_amps_hardware_checklist" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>actual_sn</element>
+            <list_id display_value="x_chfa_amps_hardware_checklist" element="NULL" name="x_chfa_amps_hardware_checklist" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">5037d73813e53a00d9c75d322244b00c</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>sandeep.gunnam</sys_created_by>
+            <sys_created_on>2017-03-14 19:12:30</sys_created_on>
+            <sys_id>d837d73813e53a00d9c75d322244b00c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sandeep.gunnam</sys_updated_by>
+            <sys_updated_on>2017-03-14 19:12:30</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>asset</element>
+            <list_id display_value="x_chfa_amps_hardware_checklist" element="NULL" name="x_chfa_amps_hardware_checklist" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">5037d73813e53a00d9c75d322244b00c</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>sandeep.gunnam</sys_created_by>
+            <sys_created_on>2017-03-14 19:12:30</sys_created_on>
+            <sys_id>5037d73813e53a00d9c75d322244b00d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sandeep.gunnam</sys_updated_by>
+            <sys_updated_on>2017-03-14 19:12:30</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>box</element>
+            <list_id display_value="x_chfa_amps_hardware_checklist" element="NULL" name="x_chfa_amps_hardware_checklist" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">5037d73813e53a00d9c75d322244b00c</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>sandeep.gunnam</sys_created_by>
+            <sys_created_on>2017-03-14 19:12:30</sys_created_on>
+            <sys_id>d037d73813e53a00d9c75d322244b00d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sandeep.gunnam</sys_updated_by>
+            <sys_updated_on>2017-03-14 19:12:30</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>date_signed</element>
+            <list_id display_value="x_chfa_amps_hardware_checklist" element="NULL" name="x_chfa_amps_hardware_checklist" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">5037d73813e53a00d9c75d322244b00c</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>sandeep.gunnam</sys_created_by>
+            <sys_created_on>2017-03-14 19:12:30</sys_created_on>
+            <sys_id>5437d73813e53a00d9c75d322244b00d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sandeep.gunnam</sys_updated_by>
+            <sys_updated_on>2017-03-14 19:12:30</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>equipment</element>
+            <list_id display_value="x_chfa_amps_hardware_checklist" element="NULL" name="x_chfa_amps_hardware_checklist" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">5037d73813e53a00d9c75d322244b00c</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>sandeep.gunnam</sys_created_by>
+            <sys_created_on>2017-03-14 19:12:30</sys_created_on>
+            <sys_id>d437d73813e53a00d9c75d322244b00d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sandeep.gunnam</sys_updated_by>
+            <sys_updated_on>2017-03-14 19:12:30</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>lease_end</element>
+            <list_id display_value="x_chfa_amps_hardware_checklist" element="NULL" name="x_chfa_amps_hardware_checklist" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">5037d73813e53a00d9c75d322244b00c</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>sandeep.gunnam</sys_created_by>
+            <sys_created_on>2017-03-14 19:12:30</sys_created_on>
+            <sys_id>5837d73813e53a00d9c75d322244b00d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sandeep.gunnam</sys_updated_by>
+            <sys_updated_on>2017-03-14 19:12:30</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>manufacturer</element>
+            <list_id display_value="x_chfa_amps_hardware_checklist" element="NULL" name="x_chfa_amps_hardware_checklist" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">5037d73813e53a00d9c75d322244b00c</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>sandeep.gunnam</sys_created_by>
+            <sys_created_on>2017-03-14 19:12:30</sys_created_on>
+            <sys_id>d837d73813e53a00d9c75d322244b00d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sandeep.gunnam</sys_updated_by>
+            <sys_updated_on>2017-03-14 19:12:30</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>notes</element>
+            <list_id display_value="x_chfa_amps_hardware_checklist" element="NULL" name="x_chfa_amps_hardware_checklist" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">5037d73813e53a00d9c75d322244b00c</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>sandeep.gunnam</sys_created_by>
+            <sys_created_on>2017-03-14 19:12:30</sys_created_on>
+            <sys_id>5c37d73813e53a00d9c75d322244b00d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sandeep.gunnam</sys_updated_by>
+            <sys_updated_on>2017-03-14 19:12:30</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>parent</element>
+            <list_id display_value="x_chfa_amps_hardware_checklist" element="NULL" name="x_chfa_amps_hardware_checklist" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">5037d73813e53a00d9c75d322244b00c</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>sandeep.gunnam</sys_created_by>
+            <sys_created_on>2017-03-14 19:12:30</sys_created_on>
+            <sys_id>dc37d73813e53a00d9c75d322244b00d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sandeep.gunnam</sys_updated_by>
+            <sys_updated_on>2017-03-14 19:12:30</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>photos</element>
+            <list_id display_value="x_chfa_amps_hardware_checklist" element="NULL" name="x_chfa_amps_hardware_checklist" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">5037d73813e53a00d9c75d322244b00c</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>9</position>
+            <sum>false</sum>
+            <sys_created_by>sandeep.gunnam</sys_created_by>
+            <sys_created_on>2017-03-14 19:12:30</sys_created_on>
+            <sys_id>5037d73813e53a00d9c75d322244b00e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sandeep.gunnam</sys_updated_by>
+            <sys_updated_on>2017-03-14 19:12:30</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_chfa_amps_hardware_checklist</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>sandeep.gunnam</sys_created_by>
+            <sys_created_on>2017-03-14 19:12:30</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5037d73813e53a00d9c75d322244b00c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_chfa_amps_hardware_checklist</sys_name>
+            <sys_package display_value="AMPS" source="x_chfa_amps">06092f3613d5f200d9c75d322244b022</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="AMPS">06092f3613d5f200d9c75d322244b022</sys_scope>
+            <sys_update_name>sys_ui_list_x_chfa_amps_hardware_checklist_null</sys_update_name>
+            <sys_updated_by>sandeep.gunnam</sys_updated_by>
+            <sys_updated_on>2017-03-14 19:12:30</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Install Technician" section_id="1fb5015313953600d9c75d322244b0af" sys_domain="global" table="x_chfa_amps_hardware_checklist" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>shipped</element>
+            <position>0</position>
+            <sys_created_by>sandeep.gunnam</sys_created_by>
+            <sys_created_on>2017-03-09 16:46:08</sys_created_on>
+            <sys_id>63b5015313953600d9c75d322244b0d5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Install Technician" display_value="Install Technician" name="x_chfa_amps_hardware_checklist" sys_domain="global" view="Default view">1fb5015313953600d9c75d322244b0af</sys_ui_section>
+            <sys_updated_by>sandeep.gunnam</sys_updated_by>
+            <sys_updated_on>2017-03-09 16:46:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>actual_sn</element>
+            <position>1</position>
+            <sys_created_by>sandeep.gunnam</sys_created_by>
+            <sys_created_on>2017-03-09 16:46:08</sys_created_on>
+            <sys_id>e3b5015313953600d9c75d322244b0d5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Install Technician" display_value="Install Technician" name="x_chfa_amps_hardware_checklist" sys_domain="global" view="Default view">1fb5015313953600d9c75d322244b0af</sys_ui_section>
+            <sys_updated_by>sandeep.gunnam</sys_updated_by>
+            <sys_updated_on>2017-03-09 16:46:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>box</element>
+            <position>2</position>
+            <sys_created_by>sandeep.gunnam</sys_created_by>
+            <sys_created_on>2017-03-09 16:46:08</sys_created_on>
+            <sys_id>67b5015313953600d9c75d322244b0d5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Install Technician" display_value="Install Technician" name="x_chfa_amps_hardware_checklist" sys_domain="global" view="Default view">1fb5015313953600d9c75d322244b0af</sys_ui_section>
+            <sys_updated_by>sandeep.gunnam</sys_updated_by>
+            <sys_updated_on>2017-03-09 16:46:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>lease_end</element>
+            <position>3</position>
+            <sys_created_by>sandeep.gunnam</sys_created_by>
+            <sys_created_on>2017-03-09 16:46:08</sys_created_on>
+            <sys_id>e7b5015313953600d9c75d322244b0d5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Install Technician" display_value="Install Technician" name="x_chfa_amps_hardware_checklist" sys_domain="global" view="Default view">1fb5015313953600d9c75d322244b0af</sys_ui_section>
+            <sys_updated_by>sandeep.gunnam</sys_updated_by>
+            <sys_updated_on>2017-03-09 16:46:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>4</position>
+            <sys_created_by>sandeep.gunnam</sys_created_by>
+            <sys_created_on>2017-03-09 16:46:08</sys_created_on>
+            <sys_id>6bb5015313953600d9c75d322244b0d5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Install Technician" display_value="Install Technician" name="x_chfa_amps_hardware_checklist" sys_domain="global" view="Default view">1fb5015313953600d9c75d322244b0af</sys_ui_section>
+            <sys_updated_by>sandeep.gunnam</sys_updated_by>
+            <sys_updated_on>2017-03-09 16:46:08</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>tracking</element>
+            <position>5</position>
+            <sys_created_by>sandeep.gunnam</sys_created_by>
+            <sys_created_on>2017-03-09 16:46:08</sys_created_on>
+            <sys_id>ebb5015313953600d9c75d322244b0d5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Install Technician" display_value="Install Technician" name="x_chfa_amps_hardware_checklist" sys_domain="global" view="Default view">1fb5015313953600d9c75d322244b0af</sys_ui_section>
+            <sys_updated_by>sandeep.gunnam</sys_updated_by>
+            <sys_updated_on>2017-03-09 16:46:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>notes</element>
+            <position>6</position>
+            <sys_created_by>sandeep.gunnam</sys_created_by>
+            <sys_created_on>2017-03-09 16:46:08</sys_created_on>
+            <sys_id>6fb5015313953600d9c75d322244b0d5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Install Technician" display_value="Install Technician" name="x_chfa_amps_hardware_checklist" sys_domain="global" view="Default view">1fb5015313953600d9c75d322244b0af</sys_ui_section>
+            <sys_updated_by>sandeep.gunnam</sys_updated_by>
+            <sys_updated_on>2017-03-09 16:46:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>ups_tracking</element>
+            <position>7</position>
+            <sys_created_by>sandeep.gunnam</sys_created_by>
+            <sys_created_on>2017-03-09 16:46:08</sys_created_on>
+            <sys_id>efb5015313953600d9c75d322244b0d5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Install Technician" display_value="Install Technician" name="x_chfa_amps_hardware_checklist" sys_domain="global" view="Default view">1fb5015313953600d9c75d322244b0af</sys_ui_section>
+            <sys_updated_by>sandeep.gunnam</sys_updated_by>
+            <sys_updated_on>2017-03-09 16:46:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Install Technician</caption>
+            <header>false</header>
+            <name>x_chfa_amps_hardware_checklist</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>sandeep.gunnam</sys_created_by>
+            <sys_created_on>2017-03-09 16:46:08</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1fb5015313953600d9c75d322244b0af</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_chfa_amps_hardware_checklist</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="AMPS" source="x_chfa_amps">06092f3613d5f200d9c75d322244b022</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="AMPS">06092f3613d5f200d9c75d322244b022</sys_scope>
+            <sys_update_name>sys_ui_section_1fb5015313953600d9c75d322244b0af</sys_update_name>
+            <sys_updated_by>sandeep.gunnam</sys_updated_by>
+            <sys_updated_on>2017-03-09 16:46:08</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

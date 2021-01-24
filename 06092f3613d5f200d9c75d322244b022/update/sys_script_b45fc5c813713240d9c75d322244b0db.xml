@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>false</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_chfa_amps_purchase_order</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_chfa_amps_purchase_order">sentVALCHANGES^EQ<item endquery="false" field="sent" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Send PO Notification</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	
+	gs.eventQueue("x_chfa_amps.email_purchase_order",gr,current.sys_id,"example");
+	
+	
+	
+	//gs.eventQueue("attachment.uploaded",gr,aref,"sandeep.gunnam@accesscfa.com");
+	/*
+	gs.log('Attachment :' + current.table_name);
+	//Send Notification with Attachment
+	var gr = new GlideRecord(current.table_name);
+	gr.addQuery('sys_id',current.table_sys_id);
+	gr.query();
+	if(gr.next()){
+		var aref = '' + 'Attachment added in ' + gr.number + '';
+		
+		gs.eventQueue("attachment.uploaded",gr,aref,"sandeep.gunnam@accesscfa.com");
+	}*/
+	
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>sandeep.gunnam</sys_created_by>
+        <sys_created_on>2017-03-24 11:40:41</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b45fc5c813713240d9c75d322244b0db</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>Send PO Notification</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AMPS" source="x_chfa_amps">06092f3613d5f200d9c75d322244b022</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AMPS">06092f3613d5f200d9c75d322244b022</sys_scope>
+        <sys_update_name>sys_script_b45fc5c813713240d9c75d322244b0db</sys_update_name>
+        <sys_updated_by>sandeep.gunnam</sys_updated_by>
+        <sys_updated_on>2017-03-25 10:10:23</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=b45fc5c813713240d9c75d322244b0db"/>
+</record_update>

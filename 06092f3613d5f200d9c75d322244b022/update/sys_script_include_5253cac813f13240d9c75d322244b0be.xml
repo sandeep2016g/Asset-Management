@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_chfa_amps.AttachmentImportProcessor</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description>Script include to be called from inbound action script to process the email attachment</description>
+        <name>AttachmentImportProcessor</name>
+        <script><![CDATA[ 
+  
+var AttachmentImportProcessor = Class.create(); 
+AttachmentImportProcessor.prototype = { 
+    record: null, 
+    scheduledImportRecord: null, 
+    dataSourceRecord: null, 
+    attachmentTypes: [], 
+    debug: true, 
+    log: null, 
+    initialize: function(record, dataSourceSysId) { 
+        this.record = record; 
+        this._getDatasource(dataSourceSysId); 
+        this.log = new GSLog("com.ally.ecm.log", "AttachmentImportProvider"); 
+        if (this.debug) 
+			{ 
+				this.log.setLevel('debug') ;
+			} 
+    }, 
+    
+    setAttachmentTypes: function(types){ 
+        for (var i = 0; i < types.length; i++) { 
+            this.attachmentTypes.push(types[i]); 
+        } 
+    }, 
+  
+    processAttachments: function () { 
+  
+        if (!this.dataSourceRecord) { 
+            return false; 
+        } 
+        var sourceTable = this.record.sys_class_name.toString(); 
+        var sourceID = this.record.sys_id.toString(); 
+        var targetTable = this.dataSourceRecord.getTableName(); 
+        var targetID = this.dataSourceRecord.sys_id.toString(); 
+  
+        var gr = this._getAttachments(sourceTable, sourceID); 
+        this._logDebug("Num Attachments sent: " + gr.getRowCount()); 
+        this._logDebug("Valid Attachment Types: " + this.attachmentTypes); 
+        while (gr.next()) { 
+            if (this._isAttachmentValidType(gr)) { 
+  
+                this._copyAttachment(gr, targetTable, targetID); 
+                this._logDebug("Processing attachment: " + gr.file_name); 
+                this._processImportSynchronous(); 
+            } 
+        } 
+    }, 
+  
+    _getDatasource: function(dataSourceSysId){ 
+        this.dataSourceRecord = new GlideRecord("sys_data_source"); 
+        if (this.dataSourceRecord.get(dataSourceSysId) == false) { 
+            this.dataSourceRecord = null; 
+        } 
+    }, 
+  
+    _getAttachments: function(sourceTable, sourceID){ 
+        var gr = new GlideRecord("sys_attachment"); 
+        gr.addQuery("table_name", sourceTable); 
+        gr.addQuery("table_sys_id", sourceID); 
+        gr.query(); 
+        return gr; 
+    }, 
+  
+    _isAttachmentValidType: function(gr){ 
+        if (this.attachmentTypes == null || this.attachmentTypes.length == 0) { 
+            return true; 
+        } else { 
+            var isValid = false; 
+            var type = gr.content_type.toString(); 
+            for (var i = 0; i < this.attachmentTypes.length; i++) { 
+                if (this.attachmentTypes[i] == type) { 
+                    isValid = true; 
+                    break; 
+                } 
+            } 
+            if (!isValid) { 
+                this._logDebug("Rejected Attachment Type: " + type); 
+            } 
+            return isValid; 
+        } 
+  
+        return false; 
+    }, 
+  
+    _copyAttachment: function (gr, targetTable, targetID) { 
+        var attachment = new GlideSysAttachment(); 
+        attachment.deleteAll(this.dataSourceRecord); 
+        
+        gr.table_name = targetTable; 
+        gr.table_sys_id = targetID; 
+        var oldid = gr.sys_id.toString(); 
+        var newid = gr.insert(); 
+  
+        var doc = new GlideRecord("sys_attachment_doc"); 
+        doc.setWorkflow(false); 
+        doc.addQuery("sys_attachment", oldid); 
+        doc.query(); 
+        while (doc.next()) { 
+            doc.setValue("sys_attachment", newid); 
+            doc.insert(); 
+        } 
+    }, 
+    
+    _processImportSynchronous: function () { 
+        var retVal = false; 
+        this._getImportRecord(); 
+        if (this.scheduledImportRecord != null && this.scheduledImportRecord.isValidRecord()) { 
+            var trigger = ""; 
+            var triggerGr = new GlideRecord("sys_trigger"); 
+            
+                trigger = SncTriggerSynchronizer.executeNow(this.scheduledImportRecord); 
+                triggerGr.get(trigger); 
+                while (triggerGr.isValidRecord()) { 
+                    triggerGr = new GlideRecord("sys_trigger"); 
+                    triggerGr.get(trigger); 
+                } 
+                retVal = true; 
+             
+        } else { 
+            //Log 
+        } 
+        return retVal; 
+    }, 
+  
+    _getImportRecord: function () { 
+        this.scheduledImportRecord = new GlideRecord("scheduled_import_set"); 
+        this.scheduledImportRecord.addQuery("name", this.dataSourceRecord.name); 
+        this.scheduledImportRecord.addQuery("data_source", this.dataSourceRecord.sys_id); 
+        this.scheduledImportRecord.query(); 
+        if (!this.scheduledImportRecord.next()) { 
+            this.scheduledImportRecord = new GlideRecord("scheduled_import_set"); 
+            this.scheduledImportRecord.initialize(); 
+            this.scheduledImportRecord.name = this.dataSourceRecord.name.toString(); 
+            this.scheduledImportRecord.active = false; 
+            this.scheduledImportRecord.data_source = this.dataSourceRecord.sys_id.toString(); 
+            this.scheduledImportRecord.post_script_bool = true; 
+            this.scheduledImportRecord.post_script = ""; 
+            this.scheduledImportRecord.insert(); 
+            this._logDebug("Scheduled Import created."); 
+        } else { 
+            this._logDebug("Scheduled Import set found: " + this.scheduledImportRecord.sys_id.toString()); 
+        } 
+    }, 
+  
+    _logDebug: function(msg){ 
+        this.log.logDebug(msg); 
+    }, 
+  
+    _logError: function (msg) { 
+        this.log.logErr(msg); 
+    }, 
+    
+    type: 'AttachmentImportProvider'
+} ;]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>sandeep.gunnam</sys_created_by>
+        <sys_created_on>2017-03-24 15:44:49</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>5253cac813f13240d9c75d322244b0be</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>AttachmentImportProcessor</sys_name>
+        <sys_package display_value="AMPS" source="x_chfa_amps">06092f3613d5f200d9c75d322244b022</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AMPS">06092f3613d5f200d9c75d322244b022</sys_scope>
+        <sys_update_name>sys_script_include_5253cac813f13240d9c75d322244b0be</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-07-31 16:20:17</sys_updated_on>
+    </sys_script_include>
+</record_update>

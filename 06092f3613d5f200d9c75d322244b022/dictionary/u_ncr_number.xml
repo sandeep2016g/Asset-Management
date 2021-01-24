@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="Location NCR Number" max_length="40" name="u_ncr_number" sizeclass="0" type="collection">
+        <element attributes="import_attribute_name=NCR Number,edge_encryption_enabled=true" label="NCR Number" max_length="40" name="u_ncr_number" type="string"/>
+        <element attributes="import_attribute_name=Site Name,edge_encryption_enabled=true" label="Site Name" max_length="40" name="u_site_name" type="string"/>
+        <element attributes="import_attribute_name=Site Number" label="Site Number" max_length="40" name="u_site_number" type="integer"/>
+    </element>
+</database>

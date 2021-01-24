@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <name>Email Installation Checklist</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="">9cd25b381387d24058af33076144b0ae</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2017-03-29 12:59:45</run_start>
+        <run_time>1970-01-01 09:00:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[var install_date = '';
+var table = 'x_chfa_amps_pos_refresh';
+var today = new GlideDateTime();
+var dur ='';
+var days = '';
+var recordID ='';
+//Defining the header for the checklist as per the template
+var output = "Restaurant,Shipped back,Return #,Sch#,Manf.,Box #,UPS Tracking,Feature, Actual S/N,Equipment,Description,Notes,EISQ,Start Date,Lease End";
+
+var gr = new GlideRecord('x_chfa_amps_pos_refresh');
+gr.addEncodedQuery('location=ff2a896424cf20002a4da30681f3e382');
+gr.query();
+while(gr.next()){
+	install_date = gr.getDisplayValue('install_date');
+	install_date= new GlideDateTime(install_date);
+	// Duration in days
+	dur = GlideDateTime.subtract(today,install_date); // returns a GlideDuration object
+	days = dur.getRoundedDayPart();
+	gs.info("days is :"+days);
+	if(days == 0)
+		//if(days == gs.getProperty('x_chfa_amps.installation_checklist'))
+	{
+		var gr1=new GlideRecord('x_chfa_amps_hardware_checklist');
+		gr1.addEncodedQuery('parent='+gr.sys_id);
+		gr1.query();
+		while(gr1.next()){
+			//Generating the columns for the csv file
+			output  += "\n" + gr1.getDisplayValue('parent') + ","
+			+ "" + ","
+			+ "" + ","
+			+ "" + ","
+			+ "" + ","
+			+ "" + ","
+			+ "" + ","
+			+ "" + ","
+			+ "" + ","
+			+ gr1.asset.display_name + ","
+			+ "" + ","
+			+ "" + ","
+			+ "" + ","
+			+ "" + ","
+			+ "";
+			if (!recordID) {
+				recordID = gr.sys_id;
+			}
+			
+		}
+		//Verifying if attachment already exists on the record. If not attach the installation checklist
+		var gr2 = new GlideRecord('sys_attachment');
+		gr2.addEncodedQuery('table_sys_id='+gr.sys_id);
+		gr2.query();
+		if(!gr2.next()){
+			writeAttachmentFile(output);
+			gs.eventQueue('x_chfa_amps.email_installation_checklist',gr);
+		}
+		gr.setValue('state',2);
+		gr.update();
+	}
+	
+}
+
+function writeAttachmentFile(data) {
+	var attachment = new global.Attachment();
+	var attachmentRec = attachment.write(table, recordID, "Installation Checklist.csv", "text/csv", data);
+}]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>sandeep.gunnam</sys_created_by>
+        <sys_created_on>2017-03-29 14:12:51</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>56b1572513b17640d9c75d322244b050</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>Email Installation Checklist</sys_name>
+        <sys_package display_value="AMPS" source="x_chfa_amps">06092f3613d5f200d9c75d322244b022</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AMPS">06092f3613d5f200d9c75d322244b022</sys_scope>
+        <sys_update_name>sysauto_script_56b1572513b17640d9c75d322244b050</sys_update_name>
+        <sys_updated_by>sandeep.gunnam</sys_updated_by>
+        <sys_updated_on>2017-04-04 02:36:44</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

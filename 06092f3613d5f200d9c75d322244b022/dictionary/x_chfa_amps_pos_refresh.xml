@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" label="POS Refresh" max_length="40" name="x_chfa_amps_pos_refresh" sizeclass="1" type="collection">
+        <element label="All Equipment Returned" max_length="40" name="all_equipment_returned" type="glide_date_time"/>
+        <element label="Cabling Complete" max_length="40" name="cabling_complete" type="glide_date_time"/>
+        <element label="Cabling Date" max_length="40" name="cabling_date" type="glide_date_time"/>
+        <element label="Cabling Vendor" max_length="32" name="cabling_vendor" reference="core_company" reference_qual="vendor=true^vendor_typeLIKE7c2391641329f600d9c75d322244b083^EQ" reference_qual_condition="vendor=true^vendor_typeLIKE7c2391641329f600d9c75d322244b083^EQ" type="reference"/>
+        <element label="Hardware Vendor" max_length="32" name="hardware_vendor" reference="core_company" reference_qual="vendor=true^vendor_typeLIKEfdf2cba2131db200d9c75d322244b02f^EQ" reference_qual_condition="vendor=true^vendor_typeLIKEfdf2cba2131db200d9c75d322244b02f^EQ" type="reference"/>
+        <element label="Install Complete" max_length="40" name="install_complete" type="glide_date_time"/>
+        <element label="Install Date" max_length="40" name="install_date" type="glide_date_time"/>
+        <element label="Install Vendor" max_length="32" name="install_vendor" reference="core_company" reference_qual="vendor=true^vendor_typeLIKE053383a2131db200d9c75d322244b0f7^EQ" reference_qual_condition="vendor=true^vendor_typeLIKE053383a2131db200d9c75d322244b0f7^EQ" type="reference"/>
+        <element display="true" label="Location" max_length="32" name="location" read_only="true" reference="cmn_location" type="reference"/>
+        <element label="My Work Notes" max_length="4000" name="my_work_notes" type="journal_input"/>
+        <element label="Project Manager" max_length="32" name="project_manager" reference="sys_user" type="reference"/>
+        <element label="Signed By" max_length="40" name="signed_by" type="string"/>
+        <element choice="3" default="1" label="State" max_length="40" name="state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Planning" sequence="10" value="1"/>
+                <element inactive_on_update="false" label="Awaiting Install" sequence="20" value="2"/>
+                <element inactive_on_update="false" label="Install" sequence="30" value="3"/>
+                <element inactive_on_update="false" label="Review Install" sequence="40" value="4"/>
+                <element inactive_on_update="false" label="Validate" sequence="50" value="5"/>
+                <element inactive_on_update="false" label="Complete" sequence="60" value="6"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="hardware_vendor"/>
+        </index>
+        <index name="index2">
+            <element name="cabling_vendor"/>
+        </index>
+        <index name="index3">
+            <element name="location"/>
+        </index>
+        <index name="index4">
+            <element name="project_manager"/>
+        </index>
+        <index name="index5">
+            <element name="install_vendor"/>
+        </index>
+    </element>
+</database>

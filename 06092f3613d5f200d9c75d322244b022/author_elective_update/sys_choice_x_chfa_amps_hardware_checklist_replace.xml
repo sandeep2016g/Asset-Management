@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="replace" table="x_chfa_amps_hardware_checklist" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>replace</element>
+            <name>x_chfa_amps_hardware_checklist</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>sandeep.gunnam</sys_created_by>
+            <sys_created_on>2017-03-28 12:14:59</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>f38391dcdb82720016a05d50cf961977</sys_id>
+            <sys_mod_count>6</sys_mod_count>
+            <sys_name>replace</sys_name>
+            <sys_package display_value="AMPS" source="x_chfa_amps">06092f3613d5f200d9c75d322244b022</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="AMPS">06092f3613d5f200d9c75d322244b022</sys_scope>
+            <sys_update_name>sys_choice_x_chfa_amps_hardware_checklist_replace</sys_update_name>
+            <sys_updated_by>sandeep.gunnam</sys_updated_by>
+            <sys_updated_on>2017-03-30 15:16:04</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>replace</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Yes</label>
+            <language>en</language>
+            <name>x_chfa_amps_hardware_checklist</name>
+            <sequence>10</sequence>
+            <sys_created_by>sandeep.gunnam</sys_created_by>
+            <sys_created_on>2017-03-28 12:14:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>38ed795913f13640d9c75d322244b000</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>sandeep.gunnam</sys_updated_by>
+            <sys_updated_on>2017-03-28 12:17:25</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>replace</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>No</label>
+            <language>en</language>
+            <name>x_chfa_amps_hardware_checklist</name>
+            <sequence>20</sequence>
+            <sys_created_by>sandeep.gunnam</sys_created_by>
+            <sys_created_on>2017-03-28 12:15:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d70e7d5913f13640d9c75d322244b052</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>sandeep.gunnam</sys_updated_by>
+            <sys_updated_on>2017-03-28 12:17:06</sys_updated_on>
+            <value>0</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="ff51e0ce137d7640d9c75d322244b09b" sys_domain="global" table="u_update_hardware_checklist" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>0</position>
+            <sys_created_by>sandeep.gunnam</sys_created_by>
+            <sys_created_on>2017-03-30 13:26:14</sys_created_on>
+            <sys_id>fb51e0ce137d7640d9c75d322244b09f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_update_hardware_checklist" sys_domain="global" view="Default view">ff51e0ce137d7640d9c75d322244b09b</sys_ui_section>
+            <sys_updated_by>sandeep.gunnam</sys_updated_by>
+            <sys_updated_on>2017-03-30 13:26:14</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_actual_s_n</element>
+            <position>1</position>
+            <sys_created_by>sandeep.gunnam</sys_created_by>
+            <sys_created_on>2017-03-30 13:26:14</sys_created_on>
+            <sys_id>7351e0ce137d7640d9c75d322244b0a0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_update_hardware_checklist" sys_domain="global" view="Default view">ff51e0ce137d7640d9c75d322244b09b</sys_ui_section>
+            <sys_updated_by>sandeep.gunnam</sys_updated_by>
+            <sys_updated_on>2017-03-30 13:26:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_box__</element>
+            <position>2</position>
+            <sys_created_by>sandeep.gunnam</sys_created_by>
+            <sys_created_on>2017-03-30 13:26:14</sys_created_on>
+            <sys_id>f351e0ce137d7640d9c75d322244b0a0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_update_hardware_checklist" sys_domain="global" view="Default view">ff51e0ce137d7640d9c75d322244b09b</sys_ui_section>
+            <sys_updated_by>sandeep.gunnam</sys_updated_by>
+            <sys_updated_on>2017-03-30 13:26:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_description</element>
+            <position>3</position>
+            <sys_created_by>sandeep.gunnam</sys_created_by>
+            <sys_created_on>2017-03-30 13:26:14</sys_created_on>
+            <sys_id>7751e0ce137d7640d9c75d322244b0a0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_update_hardware_checklist" sys_domain="global" view="Default view">ff51e0ce137d7640d9c75d322244b09b</sys_ui_section>
+            <sys_updated_by>sandeep.gunnam</sys_updated_by>
+            <sys_updated_on>2017-03-30 13:26:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_eisq</element>
+            <position>4</position>
+            <sys_created_by>sandeep.gunnam</sys_created_by>
+            <sys_created_on>2017-03-30 13:26:14</sys_created_on>
+            <sys_id>f751e0ce137d7640d9c75d322244b0a0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_update_hardware_checklist" sys_domain="global" view="Default view">ff51e0ce137d7640d9c75d322244b09b</sys_ui_section>
+            <sys_updated_by>sandeep.gunnam</sys_updated_by>
+            <sys_updated_on>2017-03-30 13:26:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_equipment</element>
+            <position>5</position>
+            <sys_created_by>sandeep.gunnam</sys_created_by>
+            <sys_created_on>2017-03-30 13:26:14</sys_created_on>
+            <sys_id>7b51e0ce137d7640d9c75d322244b0a0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_update_hardware_checklist" sys_domain="global" view="Default view">ff51e0ce137d7640d9c75d322244b09b</sys_ui_section>
+            <sys_updated_by>sandeep.gunnam</sys_updated_by>
+            <sys_updated_on>2017-03-30 13:26:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_feature</element>
+            <position>6</position>
+            <sys_created_by>sandeep.gunnam</sys_created_by>
+            <sys_created_on>2017-03-30 13:26:14</sys_created_on>
+            <sys_id>fb51e0ce137d7640d9c75d322244b0a0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_update_hardware_checklist" sys_domain="global" view="Default view">ff51e0ce137d7640d9c75d322244b09b</sys_ui_section>
+            <sys_updated_by>sandeep.gunnam</sys_updated_by>
+            <sys_updated_on>2017-03-30 13:26:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_lease_end</element>
+            <position>7</position>
+            <sys_created_by>sandeep.gunnam</sys_created_by>
+            <sys_created_on>2017-03-30 13:26:14</sys_created_on>
+            <sys_id>7f51e0ce137d7640d9c75d322244b0a0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_update_hardware_checklist" sys_domain="global" view="Default view">ff51e0ce137d7640d9c75d322244b09b</sys_ui_section>
+            <sys_updated_by>sandeep.gunnam</sys_updated_by>
+            <sys_updated_on>2017-03-30 13:26:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_manf_</element>
+            <position>8</position>
+            <sys_created_by>sandeep.gunnam</sys_created_by>
+            <sys_created_on>2017-03-30 13:26:14</sys_created_on>
+            <sys_id>ff51e0ce137d7640d9c75d322244b0a0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_update_hardware_checklist" sys_domain="global" view="Default view">ff51e0ce137d7640d9c75d322244b09b</sys_ui_section>
+            <sys_updated_by>sandeep.gunnam</sys_updated_by>
+            <sys_updated_on>2017-03-30 13:26:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>9</position>
+            <sys_created_by>sandeep.gunnam</sys_created_by>
+            <sys_created_on>2017-03-30 13:26:14</sys_created_on>
+            <sys_id>7351e0ce137d7640d9c75d322244b0a1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_update_hardware_checklist" sys_domain="global" view="Default view">ff51e0ce137d7640d9c75d322244b09b</sys_ui_section>
+            <sys_updated_by>sandeep.gunnam</sys_updated_by>
+            <sys_updated_on>2017-03-30 13:26:14</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_restaurant</element>
+            <position>10</position>
+            <sys_created_by>sandeep.gunnam</sys_created_by>
+            <sys_created_on>2017-03-30 13:26:14</sys_created_on>
+            <sys_id>f351e0ce137d7640d9c75d322244b0a1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_update_hardware_checklist" sys_domain="global" view="Default view">ff51e0ce137d7640d9c75d322244b09b</sys_ui_section>
+            <sys_updated_by>sandeep.gunnam</sys_updated_by>
+            <sys_updated_on>2017-03-30 13:26:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_sch_</element>
+            <position>11</position>
+            <sys_created_by>sandeep.gunnam</sys_created_by>
+            <sys_created_on>2017-03-30 13:26:14</sys_created_on>
+            <sys_id>7751e0ce137d7640d9c75d322244b0a1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_update_hardware_checklist" sys_domain="global" view="Default view">ff51e0ce137d7640d9c75d322244b09b</sys_ui_section>
+            <sys_updated_by>sandeep.gunnam</sys_updated_by>
+            <sys_updated_on>2017-03-30 13:26:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_shipped_back</element>
+            <position>12</position>
+            <sys_created_by>sandeep.gunnam</sys_created_by>
+            <sys_created_on>2017-03-30 13:26:14</sys_created_on>
+            <sys_id>f751e0ce137d7640d9c75d322244b0a1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_update_hardware_checklist" sys_domain="global" view="Default view">ff51e0ce137d7640d9c75d322244b09b</sys_ui_section>
+            <sys_updated_by>sandeep.gunnam</sys_updated_by>
+            <sys_updated_on>2017-03-30 13:26:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_start_date</element>
+            <position>13</position>
+            <sys_created_by>sandeep.gunnam</sys_created_by>
+            <sys_created_on>2017-03-30 13:26:14</sys_created_on>
+            <sys_id>7b51e0ce137d7640d9c75d322244b0a1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_update_hardware_checklist" sys_domain="global" view="Default view">ff51e0ce137d7640d9c75d322244b09b</sys_ui_section>
+            <sys_updated_by>sandeep.gunnam</sys_updated_by>
+            <sys_updated_on>2017-03-30 13:26:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_notes</element>
+            <position>14</position>
+            <sys_created_by>sandeep.gunnam</sys_created_by>
+            <sys_created_on>2017-03-30 13:26:14</sys_created_on>
+            <sys_id>fb51e0ce137d7640d9c75d322244b0a1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_update_hardware_checklist" sys_domain="global" view="Default view">ff51e0ce137d7640d9c75d322244b09b</sys_ui_section>
+            <sys_updated_by>sandeep.gunnam</sys_updated_by>
+            <sys_updated_on>2017-03-30 13:26:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_return__</element>
+            <position>15</position>
+            <sys_created_by>sandeep.gunnam</sys_created_by>
+            <sys_created_on>2017-03-30 13:26:14</sys_created_on>
+            <sys_id>7f51e0ce137d7640d9c75d322244b0a1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_update_hardware_checklist" sys_domain="global" view="Default view">ff51e0ce137d7640d9c75d322244b09b</sys_ui_section>
+            <sys_updated_by>sandeep.gunnam</sys_updated_by>
+            <sys_updated_on>2017-03-30 13:26:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_ups_tracking</element>
+            <position>16</position>
+            <sys_created_by>sandeep.gunnam</sys_created_by>
+            <sys_created_on>2017-03-30 13:26:14</sys_created_on>
+            <sys_id>ff51e0ce137d7640d9c75d322244b0a1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_update_hardware_checklist" sys_domain="global" view="Default view">ff51e0ce137d7640d9c75d322244b09b</sys_ui_section>
+            <sys_updated_by>sandeep.gunnam</sys_updated_by>
+            <sys_updated_on>2017-03-30 13:26:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>17</position>
+            <sys_created_by>sandeep.gunnam</sys_created_by>
+            <sys_created_on>2017-03-30 13:26:14</sys_created_on>
+            <sys_id>7351e0ce137d7640d9c75d322244b0a2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_update_hardware_checklist" sys_domain="global" view="Default view">ff51e0ce137d7640d9c75d322244b09b</sys_ui_section>
+            <sys_updated_by>sandeep.gunnam</sys_updated_by>
+            <sys_updated_on>2017-03-30 13:26:14</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>u_update_hardware_checklist</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>sandeep.gunnam</sys_created_by>
+            <sys_created_on>2017-03-30 13:26:13</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ff51e0ce137d7640d9c75d322244b09b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_update_hardware_checklist</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="AMPS" source="x_chfa_amps">06092f3613d5f200d9c75d322244b022</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="AMPS">06092f3613d5f200d9c75d322244b022</sys_scope>
+            <sys_update_name>sys_ui_section_ff51e0ce137d7640d9c75d322244b09b</sys_update_name>
+            <sys_updated_by>sandeep.gunnam</sys_updated_by>
+            <sys_updated_on>2017-03-30 13:26:13</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

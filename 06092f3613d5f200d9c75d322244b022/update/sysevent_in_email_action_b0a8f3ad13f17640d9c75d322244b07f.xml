@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_in_email_action">
+    <sysevent_in_email_action action="INSERT_OR_UPDATE">
+        <action>record_action</action>
+        <active>true</active>
+        <assignment_operator/>
+        <condition_script/>
+        <description/>
+        <event_name>email.read</event_name>
+        <filter_condition/>
+        <from/>
+        <name>Update Hardware Checklist</name>
+        <order>10</order>
+        <reply_email/>
+        <required_roles/>
+        <script><![CDATA[(function runAction(/*GlideRecord*/ current, /*GlideRecord*/ event, /*EmailWrapper*/ email, /*ScopedEmailLogger*/ logger, /*EmailClassifier*/ classifier) {
+	
+	var transformMapID = "3e95684213bd7640d9c75d322244b014"; //sys_id of Update Hardware Checklist Transform map.
+	var datasource = '949fb3a113357640d9c75d322244b01d'; //sys_id of Update Hardware Checklist Datasource.
+	
+	attachtoDataSource();
+	function attachtoDataSource(){
+		var gr= new GlideRecord('sys_attachment');
+		gr.addEncodedQuery('table_sys_idLIKE'+datasource);
+		gr.query();
+		//To check if data source has an attachment. This is to avoid collision when multiple emails are reaching ServiceNow to update Hardware Checklist
+		if(gr.next()){
+			attachtoDataSource();
+		}
+		else{
+			var gr1 = new GlideRecord('sys_data_source');
+			gr1.addEncodedQuery('sys_id=949fb3a113357640d9c75d322244b01d');
+			gr1.query();
+			if(gr1.next()){
+				//Copying the attachment from email to the data source
+				GlideSysAttachment.copy('sys_email', sys_email.sys_id, 'sys_data_source', datasource);
+			}
+		}
+	}
+	
+	var run = new global.DataSourceLoader();
+	run._load('Update Hardware Checklist','Update Hardware Checklist',false);
+	run._load('Update Hardware Checklist','Change POS Refresh Record State',false);
+	/*
+	//Executing the scheduled import and running the transform
+	var rec = new GlideRecord('scheduled_import_set');
+	rec.get('name', 'Update Hardware Checklist');
+	gs.executeNow(rec);*/
+	
+	//Deleting the attachment on the data source to allow other inbound emails to use the same data source.
+	var gr = new GlideRecord('sys_attachment');
+	gr.addEncodedQuery('table_sys_id=949fb3a113357640d9c75d322244b01d');
+	gr.query();
+	if(gr.next()){
+		gr.deleteRecord();
+	}
+})(current, event, email, logger, classifier);
+
+]]></script>
+        <stop_processing>true</stop_processing>
+        <sys_class_name>sysevent_in_email_action</sys_class_name>
+        <sys_created_by>sandeep.gunnam</sys_created_by>
+        <sys_created_on>2017-03-29 16:24:53</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b0a8f3ad13f17640d9c75d322244b07f</sys_id>
+        <sys_mod_count>40</sys_mod_count>
+        <sys_name>Update Hardware Checklist</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AMPS" source="x_chfa_amps">06092f3613d5f200d9c75d322244b022</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AMPS">06092f3613d5f200d9c75d322244b022</sys_scope>
+        <sys_update_name>sysevent_in_email_action_b0a8f3ad13f17640d9c75d322244b07f</sys_update_name>
+        <sys_updated_by>sandeep.gunnam</sys_updated_by>
+        <sys_updated_on>2017-04-03 15:55:12</sys_updated_on>
+        <table>x_chfa_amps_pos_refresh</table>
+        <template/>
+        <type>reply</type>
+    </sysevent_in_email_action>
+</record_update>

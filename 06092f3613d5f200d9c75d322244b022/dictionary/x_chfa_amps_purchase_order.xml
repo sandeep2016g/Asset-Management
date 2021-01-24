@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Purchase Order" max_length="40" name="x_chfa_amps_purchase_order" sizeclass="0" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="ref_ac_columns_search=true,ref_auto_completer=AJAXTableCompleter,ref_ac_columns=install_date" label="Parent" max_length="32" name="parent" reference="x_chfa_amps_pos_refresh" type="reference"/>
+        <element label="Received" max_length="40" name="received" type="glide_date_time"/>
+        <element label="Sent" max_length="40" name="sent" type="glide_date_time"/>
+        <element label="Total Cost" max_length="20" name="total_cost" type="currency"/>
+        <index name="index">
+            <element name="parent"/>
+        </index>
+    </element>
+</database>
